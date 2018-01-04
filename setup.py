@@ -9,7 +9,7 @@ from shutil import rmtree
 from setuptools import find_packages, setup, Command
 
 
-def get_version(fname="svc_tools.py"):
+def get_version(fname="svc_tools/__init__.py"):
     with open(fname) as f:
         for line in f:
             if line.startswith("__version__"):
@@ -79,7 +79,7 @@ setup(
     author=AUTHOR,
     author_email=EMAIL,
     url=URL,
-    py_modules=['svc_tools'],
+    packages=find_packages(exclude=('tests', )),
     install_requires=REQUIRED,
     include_package_data=True,
     license='MIT',
