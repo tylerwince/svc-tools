@@ -107,3 +107,9 @@ venv.bak/
 # Stuff not to send
 .vscode/
 Pipfile.lock
+_build/
+_static/
+_templates/
+conf.py
+index.md
+Makefile

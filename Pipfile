@@ -17,6 +17,7 @@ twine = "*"
 "flake8-bandit" = "*"
 pylint = "*"
 yapf = "*"
+sphinx = "*"
 
 
 [requires]
